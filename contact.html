@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact WellSpring Family Clinic">
+    <title>Contact Us - WellSpring Family Clinic</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">⚕</span>
+                <span class="logo-text">WellSpring</span>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="bmi-calculator.html">BMI Calculator</a></li>
+                <li><a href="appointment.html">Book Appointment</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="animate-on-scroll">Contact Us</h1>
+            <p class="animate-on-scroll">We're here to help with your healthcare needs</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions or need assistance? Reach out to us through any of the following channels:</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>123 Health Street<br>Medical District<br>City, State 12345</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p><strong>Main Line:</strong> (555) 123-4567</p>
+                                <p><strong>Emergency:</strong> Call 911</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">✉</div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p><strong>General:</strong> info@wellspringclinic.com</p>
+                                <p><strong>Appointments:</strong> appointments@wellspringclinic.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <div class="contact-text">
+                                <h4>Clinic Hours</h4>
+                                <p><strong>Mon-Fri:</strong> 8:00 AM - 8:00 PM</p>
+                                <p><strong>Saturday:</strong> 9:00 AM - 5:00 PM</p>
+                                <p><strong>Sunday:</strong> 10:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1!2d-73.98!3d40.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMCcwMC4wIk4gNzPCsDU4JzQ4LjAiVw!5e0!3m2!1sen!2sus!4v1234567890"
+                            width="100%"
+                            height="300"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="WellSpring Family Clinic Location">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="contact-form-container animate-on-scroll" data-delay="200">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Your Name <span class="required">*</span></label>
+                            <input type="text" id="contactName" name="contactName" required aria-label="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address <span class="required">*</span></label>
+                            <input type="email" id="contactEmail" name="contactEmail" required aria-label="Email address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="contactPhone" aria-label="Phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject <span class="required">*</span></label>
+                            <input type="text" id="contactSubject" name="contactSubject" required aria-label="Message subject">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message <span class="required">*</span></label>
+                            <textarea id="contactMessage" name="contactMessage" rows="6" required aria-label="Your message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+
+                    <div id="contactSuccess" class="success-message" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for contacting WellSpring Family Clinic. We have received your message and will respond to you as soon as possible.</p>
+                        <button id="newMessage" class="btn btn-secondary">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>WellSpring Family Clinic</h4>
+                    <p>Your trusted healthcare partner for comprehensive family medical services.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="appointment.html">Appointments</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 Health Street, Medical District</p>
+                    <p>📞 (555) 123-4567</p>
+                    <p>✉ info@wellspringclinic.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Clinic Hours</h4>
+                    <p>Mon-Fri: 8:00 AM - 8:00 PM</p>
+                    <p>Sat: 9:00 AM - 5:00 PM</p>
+                    <p>Sun: 10:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WellSpring Family Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

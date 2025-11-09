@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book an appointment at WellSpring Family Clinic">
+    <title>Book Appointment - WellSpring Family Clinic</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">⚕</span>
+                <span class="logo-text">WellSpring</span>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="bmi-calculator.html">BMI Calculator</a></li>
+                <li><a href="appointment.html" class="active">Book Appointment</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="animate-on-scroll">Book an Appointment</h1>
+            <p class="animate-on-scroll">Schedule your visit with our healthcare professionals</p>
+        </div>
+    </section>
+
+    <section class="appointment-section">
+        <div class="container">
+            <div class="appointment-content">
+                <div class="appointment-form-container animate-on-scroll">
+                    <form id="appointmentForm" class="appointment-form">
+                        <div class="form-group">
+                            <label for="fullName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" name="fullName" required aria-label="Full name">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required aria-label="Email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required aria-label="Phone number">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="appointmentDate">Preferred Date <span class="required">*</span></label>
+                                <input type="date" id="appointmentDate" name="appointmentDate" required aria-label="Appointment date">
+                            </div>
+                            <div class="form-group">
+                                <label for="appointmentTime">Preferred Time <span class="required">*</span></label>
+                                <select id="appointmentTime" name="appointmentTime" required aria-label="Appointment time">
+                                    <option value="">Select time</option>
+                                    <option value="08:00">08:00 AM</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="13:00">01:00 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                    <option value="18:00">06:00 PM</option>
+                                    <option value="19:00">07:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Required</label>
+                            <select id="service" name="service" aria-label="Service type">
+                                <option value="">Select a service</option>
+                                <option value="general">General Practice</option>
+                                <option value="immunization">Immunization</option>
+                                <option value="family-health">Family Health</option>
+                                <option value="screening">Health Screening</option>
+                                <option value="chronic">Chronic Disease Management</option>
+                                <option value="wellness">Wellness Program</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Please provide any additional information about your appointment request..." aria-label="Additional information"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Request Appointment</button>
+                    </form>
+
+                    <div id="appointmentSuccess" class="success-message" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Appointment Request Submitted!</h3>
+                        <p>Thank you for choosing WellSpring Family Clinic. We have received your appointment request and will contact you shortly to confirm your booking.</p>
+                        <button id="newAppointment" class="btn btn-secondary">Book Another Appointment</button>
+                    </div>
+                </div>
+
+                <div class="appointment-info animate-on-scroll" data-delay="200">
+                    <div class="info-box">
+                        <h3>📅 Appointment Guidelines</h3>
+                        <ul>
+                            <li>Please arrive 10 minutes before your scheduled time</li>
+                            <li>Bring your health insurance card and ID</li>
+                            <li>Have a list of current medications ready</li>
+                            <li>Wear a mask if you have cold or flu symptoms</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>⏰ Clinic Availability</h3>
+                        <p><strong>Monday - Friday:</strong> 8:00 AM - 8:00 PM</p>
+                        <p><strong>Saturday:</strong> 9:00 AM - 5:00 PM</p>
+                        <p><strong>Sunday:</strong> 10:00 AM - 4:00 PM</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>📞 Need Urgent Care?</h3>
+                        <p>For urgent medical concerns, please call us directly:</p>
+                        <p class="phone-large">(555) 123-4567</p>
+                        <p class="emergency-note">For life-threatening emergencies, call emergency services immediately.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>WellSpring Family Clinic</h4>
+                    <p>Your trusted healthcare partner for comprehensive family medical services.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="appointment.html">Appointments</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 Health Street, Medical District</p>
+                    <p>📞 (555) 123-4567</p>
+                    <p>✉ info@wellspringclinic.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Clinic Hours</h4>
+                    <p>Mon-Fri: 8:00 AM - 8:00 PM</p>
+                    <p>Sat: 9:00 AM - 5:00 PM</p>
+                    <p>Sun: 10:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WellSpring Family Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
